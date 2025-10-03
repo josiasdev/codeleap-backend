@@ -117,7 +117,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 REST_FRAMEWORK = {
-    
+
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
@@ -130,7 +130,8 @@ SPECTACULAR_SETTINGS = {
     'TITLE': 'CodeLeap Backend Challenge API',
     'DESCRIPTION': 'API RESTful desenvolvida como solução para o desafio de backend da CodeLeap. \n\nEsta API implementa um sistema CRUD para posts, permitindo criar, ler, atualizar e deletar entradas.',
     'VERSION': '1.0.0',
-    'SERVE_INCLUDE_SCHEMA': True,
+    
+    'SERVE_INCLUDE_SCHEMA': False,
     
     'CONTACT': {
         'name': 'Francisco Josias da Silva Batista',
