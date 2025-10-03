@@ -3,24 +3,34 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Django REST Framework](https://img.shields.io/badge/Django%20REST-A30000?style=for-the-badge&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
 
 ## Descrição
 
-API RESTful desenvolvida com Django e Django REST Framework como solução para o desafio de backend proposto no processo seletivo da CodeLeap. A aplicação implementa um CRUD (Create, Read, Update, Delete) básico de posts.
+API RESTful desenvolvida com Django e Django REST Framework como solução para o desafio de backend proposto no processo seletivo da CodeLeap. A aplicação implementa um CRUD (Create, Read, Update, Delete) básico de posts e está implantada na plataforma Render.
+
+## API Online
+
+A API está implantada e pode ser acessada através da seguinte URL base:
+
+**`https://codeleap-backend-uyrt.onrender.com`**
+
+
+## Endpoints da Documentação
+
+* **Swagger UI:** [`/swagger-ui/`](https://codeleap-backend-uyrt.onrender.com/swagger-ui/)
+* **ReDoc:** [`/redoc/`](hhttps://codeleap-backend-uyrt.onrender.com/redoc/)
+
 
 ## Funcionalidades
 
-* Listagem de todos os posts.
-* Criação de um novo post.
-* Atualização parcial de um post existente (título e conteúdo).
-* Exclusão de um post.
+* Documentação interativa da API com Swagger UI e ReDoc.
+* Endpoints CRUD completos para gerenciamento de posts.
+* Deploy automatizado através do Render.
 
-## Pré-requisitos
 
-* Python 3.8+
-* Pip
-
-## Instalação e Execução
+## Execução Local (Desenvolvimento)
 
 Siga os passos abaixo para executar o projeto localmente.
 
