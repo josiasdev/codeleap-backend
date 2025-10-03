@@ -120,3 +120,21 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': [],
 }
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'CodeLeap Backend Challenge API',
+    'DESCRIPTION': 'API RESTful desenvolvida como solução para o desafio de backend da CodeLeap. \n\nEsta API implementa um sistema CRUD para posts, permitindo criar, ler, atualizar e deletar entradas.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': True,
+    
+    'CONTACT': {
+        'name': 'Francisco Josias da Silva Batista',
+        'url': 'https://github.com/josiasdev',
+        'email': 'francisco.batista67@alu.ufc.br',
+    },
+
+    'LICENSE': {
+        'name': 'MIT License',
+        'url': 'https://opensource.org/licenses/MIT',
+    },
+}
