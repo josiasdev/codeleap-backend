@@ -29,6 +29,8 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'careers',
+
+    'drf_spectacular'
 ]
 
 MIDDLEWARE = [
