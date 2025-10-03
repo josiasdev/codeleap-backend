@@ -72,23 +72,72 @@ A seguir estão os endpoints disponíveis na aplicação.
 | `PATCH`  | `/careers/{id}/`   | Atualiza o título e/ou conteúdo de um post existente. | `{"title": "string", "content": "string"}` (ambos são opcionais) |
 | `DELETE` | `/careers/{id}/`   | Deleta um post específico.                | N/A                                                                   |
 
-### Exemplo de Retorno (GET /careers/)
+### Exemplos de Respostas da API
+Abaixo estão exemplos do que a API retorna para cada tipo de requisição bem-sucedida.
+
+## GET /careers/
+
+Retorna um array de objetos, contendo todos os posts no banco de dados.
+
+Status: 200 OK
 
 ```json
 [
     {
         "id": 1,
-        "username": "John Doe",
+        "username": "Josias",
         "created_datetime": "2025-10-03T01:30:00Z",
-        "title": "Primeiro Post",
-        "content": "Conteúdo do primeiro post."
+        "title": "Desenvolvedor BackEnd Django",
+        "content": "Sobre desenvolvimento backend com django."
     },
     {
         "id": 2,
-        "username": "Jane Doe",
+        "username": "João",
         "created_datetime": "2025-10-03T01:35:00Z",
-        "title": "Outro Post",
-        "content": "Mais um conteúdo interessante."
+        "title": "Desenvolvedor FrontEnd",
+        "content": "Sobre desenvolvimento frontend com React."
     }
 ]
+```
+
+## POST /careers/
+
+Após a criação de um novo post, a API retorna o objeto completo que foi criado, incluindo o id e a data de criação (created_datetime) gerados pelo servidor.
+
+Status: 201 Created
+
+```json
+{
+    "id": 3,
+    "username": "Maria",
+    "created_datetime": "2025-10-02T22:14:00.987654Z",
+    "title": "Receita de bolo de chocolate:",
+    "content": "Maria gosta de receitas de bolo de chocolate."
+}
+```
+
+## PATCH /careers/{id}/
+
+Após a atualização bem-sucedida de um post (por exemplo, o post com id: 1), a API retorna o objeto completo com os dados modificados.
+
+Status: 200 OK
+
+```json
+{
+    "id": 1,
+    "username": "Josias",
+    "created_datetime": "2025-10-02T22:10:00.123456Z",
+    "title": "Desenvolvedor Web3",
+    "content": "Desenvolvimento Web3 cresce no Brasil."
+}
+```
+
+## DELETE /careers/{id}/
+
+Se o item for deletado com sucesso, a API retornará uma resposta sem conteúdo no corpo.
+
+Status: 204 No Content
+
+```json
+[]
 ```
