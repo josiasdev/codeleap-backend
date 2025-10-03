@@ -20,7 +20,8 @@ A API está implantada e pode ser acessada através da seguinte URL base:
 ## Endpoints da Documentação
 
 * **Swagger UI:** [`/swagger-ui/`](https://codeleap-backend-uyrt.onrender.com/swagger-ui/)
-* **ReDoc:** [`/redoc/`](hhttps://codeleap-backend-uyrt.onrender.com/redoc/)
+
+* **ReDoc:** [`/redoc/`](https://codeleap-backend-uyrt.onrender.com/redoc/)
 
 
 ## Funcionalidades
